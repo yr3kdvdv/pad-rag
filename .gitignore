@@ -218,3 +218,41 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- pad-rag coursework artifacts ---
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Virtual environments (explicit)
+.venv/
+venv/
+
+# Python build artifacts
+*.whl
+pip-wheel-metadata/
+
+# RAG/ML local artifacts (large or machine-specific)
+lab1/data/raw/
+lab1/data/cache/
+lab1/data/downloads/
+lab1/data/corpora/
+lab1/data/vector_store/
+lab1/data/vector_indexes/
+lab1/data/indexes/
+lab1/data/models/
+lab1/data/checkpoints/
+lab1/data/embeddings/
+
+lab1/experiments/artifacts/
+lab1/experiments/tmp/
+lab1/experiments/runs/
+
+# Preserve intentional lightweight tracked docs/configs/results
+!lab1/data/README.md
+!lab1/experiments/README.md
+!lab1/experiments/configs/
+!lab1/experiments/configs/**
+!lab1/experiments/results/
+!lab1/experiments/results/**
